@@ -1,0 +1,971 @@
+desc: --stacks=yes --massif-out-file=massif.out.0
+cmd: ./fft_parallel
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=151810683
+mem_heap_B=2942040
+mem_heap_extra_B=160912
+mem_stacks_B=2248
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=490594455
+mem_heap_B=2947320
+mem_heap_extra_B=160896
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=739304720
+mem_heap_B=2964364
+mem_heap_extra_B=160916
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1095535897
+mem_heap_B=3031948
+mem_heap_extra_B=160916
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1387885352
+mem_heap_B=3138628
+mem_heap_extra_B=160932
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1750902953
+mem_heap_B=3318852
+mem_heap_extra_B=160932
+mem_stacks_B=1688
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2019665721
+mem_heap_B=3318852
+mem_heap_extra_B=160932
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2276736718
+mem_heap_B=3548228
+mem_heap_extra_B=160916
+mem_stacks_B=1680
+heap_tree=detailed
+n16: 3548228 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 1673472 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n1: 527544 0x10FBED79: ???
+   n1: 527544 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 527544 0x1077A420: ???
+     n1: 527544 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 527544 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 527544 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 527544 0x113A84: main (fft_parallel.cpp:46)
+  n0: 94096 in 20 places, all below massif's threshold (1.00%)
+ n0: 350972 in 396 places, all below massif's threshold (1.00%)
+ n4: 278976 0x6536F7C: opal_hash_table_init2 (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n0: 80160 in 15 places, all below massif's threshold (1.00%)
+  n1: 66272 0x509269E: ompi_proc_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+   n1: 66272 0x50963C0: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+    n1: 66272 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+     n0: 66272 0x113A84: main (fft_parallel.cpp:46)
+  n1: 66272 0x655E3A0: mca_base_var_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 66272 0x653F9B8: opal_init_util (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 66272 0x5096072: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+     n1: 66272 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n0: 66272 0x113A84: main (fft_parallel.cpp:46)
+  n1: 66272 0x6560F88: mca_base_pvar_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 66272 0x655E3F6: mca_base_var_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 66272 0x653F9B8: opal_init_util (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+     n1: 66272 0x5096072: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 66272 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n0: 66272 0x113A84: main (fft_parallel.cpp:46)
+ n1: 143360 0x6592E53: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n2: 143360 0x65366D8: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 131072 0x1BBB5462: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_osc_rdma.so)
+    n1: 131072 0x50F66D7: ompi_osc_base_find_available (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+     n1: 131072 0x5096796: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 131072 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n0: 131072 0x113A84: main (fft_parallel.cpp:46)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n2: 131544 0x655EFC0: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n2: 126336 0x655FBB5: mca_base_var_register (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 91224 0x655FBFC: mca_base_component_var_register (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n0: 91224 in 302 places, all below massif's threshold (1.00%)
+   n0: 35112 in 145 places, all below massif's threshold (1.00%)
+  n0: 5208 in 1 place, below massif's threshold (1.00%)
+ n0: 131072 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 131072 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 131072 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 131072 0x113D70: main (fft_parallel.cpp:96)
+ n2: 83912 0x5D1D9D8: strdup (strdup.c:42)
+  n2: 54258 0x655F06C: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 50383 0x655FBB5: mca_base_var_register (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n0: 50383 in 141 places, all below massif's threshold (1.00%)
+   n0: 3875 in 1 place, below massif's threshold (1.00%)
+  n0: 29654 in 147 places, all below massif's threshold (1.00%)
+ n1: 72704 0x53D0424: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+  n1: 72704 0x40108D1: _dl_init (dl-init.c:72)
+   n0: 72704 0x40010C8: ??? (in /lib/x86_64-linux-gnu/ld-2.27.so)
+ n2: 69632 0x824C939: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_pmix_pmix112.so)
+  n1: 65536 0x824DC6C: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_pmix_pmix112.so)
+   n0: 65536 in 2 places, all below massif's threshold (1.00%)
+  n0: 4096 in 1 place, below massif's threshold (1.00%)
+ n0: 65536 0x113ECC: main (fft_parallel.cpp:115)
+ n1: 64478 0x400C2AF: _dl_new_object (dl-object.c:73)
+  n1: 64478 0x4006A03: _dl_map_object_from_fd (dl-load.c:998)
+   n2: 64478 0x40091AA: _dl_map_object (dl-load.c:2460)
+    n1: 45542 0x4015082: dl_open_worker (dl-open.c:235)
+     n1: 45542 0x5DE716D: _dl_catch_exception (dl-error-skeleton.c:196)
+      n1: 45542 0x4014968: _dl_open (dl-open.c:605)
+       n1: 45542 0x6C0FF94: dlopen_doit (dlopen.c:66)
+        n1: 45542 0x5DE716D: _dl_catch_exception (dl-error-skeleton.c:196)
+         n1: 45542 0x5DE71FD: _dl_catch_error (dl-error-skeleton.c:215)
+          n1: 45542 0x6C10743: _dlerror_run (dlerror.c:162)
+           n2: 45542 0x6C1004F: dlopen@@GLIBC_2.2.5 (dlopen.c:87)
+            n1: 41893 0x6578AAF: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+             n1: 41893 0x655A945: mca_base_component_repository_open (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+              n1: 41893 0x6559A08: mca_base_component_find (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+               n1: 41893 0x6565BC8: mca_base_framework_components_register (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+                n1: 41893 0x6566018: mca_base_framework_register (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+                 n1: 41893 0x656607F: mca_base_framework_open (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+                  n0: 41893 in 22 places, all below massif's threshold (1.00%)
+            n0: 3649 in 1 place, below massif's threshold (1.00%)
+    n0: 18936 in 1 place, below massif's threshold (1.00%)
+ n2: 45240 0xC0625CD: ???
+  n1: 42000 0xC065F8D: ???
+   n1: 42000 0xBF6BB30: ???
+    n1: 42000 0xBF7697F: ???
+     n1: 42000 0xBF7619D: ???
+      n2: 42000 0xBF76A81: ???
+       n1: 41160 0xBF7619D: ???
+        n1: 41160 0xBF76A81: ???
+         n0: 41160 in 2 places, all below massif's threshold (1.00%)
+       n0: 840 in 1 place, below massif's threshold (1.00%)
+  n0: 3240 in 1 place, below massif's threshold (1.00%)
+ n1: 44114 0x655CAF9: mca_base_var_generate_full_name4 (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n0: 44114 in 10 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=2633915367
+mem_heap_B=4416764
+mem_heap_extra_B=160948
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2853647218
+mem_heap_B=5858704
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=3136647343
+mem_heap_B=5858704
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=detailed
+n16: 5858704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 1690040 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n1: 527544 0x10FBED79: ???
+   n1: 527544 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 527544 0x1077A420: ???
+     n1: 527544 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 527544 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 527544 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 527544 0x113A84: main (fft_parallel.cpp:46)
+  n0: 110664 in 20 places, all below massif's threshold (1.00%)
+ n0: 524288 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 524288 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 524288 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 524288 0x113D70: main (fft_parallel.cpp:96)
+ n0: 440474 in 397 places, all below massif's threshold (1.00%)
+ n4: 278976 0x6536F7C: opal_hash_table_init2 (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n0: 80160 in 15 places, all below massif's threshold (1.00%)
+  n1: 66272 0x509269E: ompi_proc_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+   n1: 66272 0x50963C0: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+    n1: 66272 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+     n0: 66272 0x113A84: main (fft_parallel.cpp:46)
+  n1: 66272 0x655E3A0: mca_base_var_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 66272 0x653F9B8: opal_init_util (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 66272 0x5096072: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+     n1: 66272 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n0: 66272 0x113A84: main (fft_parallel.cpp:46)
+  n1: 66272 0x6560F88: mca_base_pvar_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 66272 0x655E3F6: mca_base_var_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 66272 0x653F9B8: opal_init_util (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+     n1: 66272 0x5096072: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 66272 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n0: 66272 0x113A84: main (fft_parallel.cpp:46)
+ n0: 262144 0x113ECC: main (fft_parallel.cpp:115)
+ n0: 262144 0x113EFC: main (fft_parallel.cpp:116)
+ n0: 262144 0x113F2C: main (fft_parallel.cpp:117)
+ n1: 143360 0x6592E53: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n2: 143360 0x65366D8: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 131072 0x1BBB5462: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_osc_rdma.so)
+    n1: 131072 0x50F66D7: ompi_osc_base_find_available (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+     n1: 131072 0x5096796: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 131072 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n0: 131072 0x113A84: main (fft_parallel.cpp:46)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n2: 131544 0x655EFC0: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n2: 126336 0x655FBB5: mca_base_var_register (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 91224 0x655FBFC: mca_base_component_var_register (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n0: 91224 in 302 places, all below massif's threshold (1.00%)
+   n0: 35112 in 145 places, all below massif's threshold (1.00%)
+  n0: 5208 in 1 place, below massif's threshold (1.00%)
+ n1: 83912 0x5D1D9D8: strdup (strdup.c:42)
+  n0: 83912 in 148 places, all below massif's threshold (1.00%)
+ n1: 72704 0x53D0424: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+  n1: 72704 0x40108D1: _dl_init (dl-init.c:72)
+   n0: 72704 0x40010C8: ??? (in /lib/x86_64-linux-gnu/ld-2.27.so)
+ n2: 69632 0x824C939: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_pmix_pmix112.so)
+  n1: 65536 0x824DC6C: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_pmix_pmix112.so)
+   n0: 65536 in 2 places, all below massif's threshold (1.00%)
+  n0: 4096 in 1 place, below massif's threshold (1.00%)
+ n1: 64478 0x400C2AF: _dl_new_object (dl-object.c:73)
+  n1: 64478 0x4006A03: _dl_map_object_from_fd (dl-load.c:998)
+   n1: 64478 0x40091AA: _dl_map_object (dl-load.c:2460)
+    n0: 64478 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=3357379846
+mem_heap_B=5858704
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=3733239411
+mem_heap_B=8742288
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=3974082593
+mem_heap_B=8742288
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=4249093322
+mem_heap_B=8742288
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=4431118725
+mem_heap_B=8742288
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=4651229548
+mem_heap_B=8742288
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=detailed
+n12: 8742288 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 1690040 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n1: 527544 0x10FBED79: ???
+   n1: 527544 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 527544 0x1077A420: ???
+     n1: 527544 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 527544 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 527544 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 527544 0x113A84: main (fft_parallel.cpp:46)
+  n0: 110664 in 20 places, all below massif's threshold (1.00%)
+ n0: 1048576 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 1048576 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 1048576 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 1048576 0x113D70: main (fft_parallel.cpp:96)
+ n0: 731200 in 401 places, all below massif's threshold (1.00%)
+ n0: 524288 0x113ECC: main (fft_parallel.cpp:115)
+ n0: 524288 0x113EFC: main (fft_parallel.cpp:116)
+ n0: 524288 0x113F2C: main (fft_parallel.cpp:117)
+ n1: 278976 0x6536F7C: opal_hash_table_init2 (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n0: 278976 in 18 places, all below massif's threshold (1.00%)
+ n1: 143360 0x6592E53: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n2: 143360 0x65366D8: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 131072 0x1BBB5462: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/openmpi/mca_osc_rdma.so)
+    n1: 131072 0x50F66D7: ompi_osc_base_find_available (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+     n1: 131072 0x5096796: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 131072 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n0: 131072 0x113A84: main (fft_parallel.cpp:46)
+   n0: 12288 in 1 place, below massif's threshold (1.00%)
+ n2: 131544 0x655EFC0: ??? (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n2: 126336 0x655FBB5: mca_base_var_register (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+   n1: 91224 0x655FBFC: mca_base_component_var_register (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n0: 91224 in 302 places, all below massif's threshold (1.00%)
+   n0: 35112 in 145 places, all below massif's threshold (1.00%)
+  n0: 5208 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=4944510680
+mem_heap_B=8742288
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=5128980303
+mem_heap_B=8742288
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=5407806923
+mem_heap_B=14509456
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=5612836506
+mem_heap_B=14509456
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=5805156995
+mem_heap_B=14509456
+mem_heap_extra_B=160968
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=6082870643
+mem_heap_B=26043792
+mem_heap_extra_B=177096
+mem_stacks_B=1664
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=6352816900
+mem_heap_B=26043792
+mem_heap_extra_B=177096
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=6634255109
+mem_heap_B=26043792
+mem_heap_extra_B=177096
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=6900394080
+mem_heap_B=26043792
+mem_heap_extra_B=177096
+mem_stacks_B=1736
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=7181232753
+mem_heap_B=26043792
+mem_heap_extra_B=177096
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=7389790444
+mem_heap_B=26043792
+mem_heap_extra_B=177096
+mem_stacks_B=1712
+heap_tree=detailed
+n10: 26043792 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 4194304 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 4194304 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 4194304 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 4194304 0x113D70: main (fft_parallel.cpp:96)
+ n0: 2097152 0x113ECC: main (fft_parallel.cpp:115)
+ n0: 2097152 0x113EFC: main (fft_parallel.cpp:116)
+ n0: 2097152 0x113F2C: main (fft_parallel.cpp:117)
+ n3: 1690040 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n1: 527544 0x10FBED79: ???
+   n1: 527544 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 527544 0x1077A420: ???
+     n1: 527544 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 527544 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 527544 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 527544 0x113A84: main (fft_parallel.cpp:46)
+  n0: 110664 in 20 places, all below massif's threshold (1.00%)
+ n0: 1006104 in 403 places, all below massif's threshold (1.00%)
+ n1: 278976 0x6536F7C: opal_hash_table_init2 (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n0: 278976 in 18 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=7702382192
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1736
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=7878568875
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1664
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=8173464417
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=8378582286
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=8708939255
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=8924766116
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=9129416273
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=9333891799
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=9513559062
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=9728353731
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=9932987760
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=10261903740
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=10469215017
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=10673732118
+mem_heap_B=49112464
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=detailed
+n9: 49112464 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 8388608 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 8388608 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 8388608 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 8388608 0x113D70: main (fft_parallel.cpp:96)
+ n0: 4194304 0x113ECC: main (fft_parallel.cpp:115)
+ n0: 4194304 0x113EFC: main (fft_parallel.cpp:116)
+ n0: 4194304 0x113F2C: main (fft_parallel.cpp:117)
+ n3: 1690040 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n1: 527544 0x10FBED79: ???
+   n1: 527544 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 527544 0x1077A420: ???
+     n1: 527544 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 527544 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 527544 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 527544 0x113A84: main (fft_parallel.cpp:46)
+  n0: 110664 in 20 places, all below massif's threshold (1.00%)
+ n0: 1285080 in 404 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=10866683189
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1680
+heap_tree=peak
+n9: 95249808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 16777216 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 16777216 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 16777216 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 16777216 0x113D70: main (fft_parallel.cpp:96)
+ n0: 8388608 0x113ECC: main (fft_parallel.cpp:115)
+ n0: 8388608 0x113EFC: main (fft_parallel.cpp:116)
+ n0: 8388608 0x113F2C: main (fft_parallel.cpp:117)
+ n2: 1690040 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n0: 638208 in 21 places, all below massif's threshold (1.00%)
+ n0: 1285080 in 404 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=11042869771
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1736
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=11307149711
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1664
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=11571430003
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1664
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=11845098617
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=detailed
+n9: 95249808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 16777216 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 16777216 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 16777216 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 16777216 0x113D70: main (fft_parallel.cpp:96)
+ n0: 8388608 0x113ECC: main (fft_parallel.cpp:115)
+ n0: 8388608 0x113EFC: main (fft_parallel.cpp:116)
+ n0: 8388608 0x113F2C: main (fft_parallel.cpp:117)
+ n2: 1690040 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n0: 638208 in 21 places, all below massif's threshold (1.00%)
+ n0: 1285080 in 404 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=12122643863
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=12395581109
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=12600071563
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=12804546338
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=12975464636
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1688
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=13158907392
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=13312523919
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=13522042725
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=detailed
+n9: 95249808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 16777216 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 16777216 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 16777216 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 16777216 0x113D70: main (fft_parallel.cpp:96)
+ n0: 8388608 0x113ECC: main (fft_parallel.cpp:115)
+ n0: 8388608 0x113EFC: main (fft_parallel.cpp:116)
+ n0: 8388608 0x113F2C: main (fft_parallel.cpp:117)
+ n2: 1690040 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n0: 638208 in 21 places, all below massif's threshold (1.00%)
+ n0: 1285080 in 404 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=13727146044
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=13931697426
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=14136179817
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=14340653583
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=14511571769
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=14663382453
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1616
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=14869981278
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=15022024941
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=15231084995
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=15436130970
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=detailed
+n9: 95249808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 16777216 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 16777216 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 16777216 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 16777216 0x113D70: main (fft_parallel.cpp:96)
+ n0: 8388608 0x113ECC: main (fft_parallel.cpp:115)
+ n0: 8388608 0x113EFC: main (fft_parallel.cpp:116)
+ n0: 8388608 0x113F2C: main (fft_parallel.cpp:117)
+ n2: 1690040 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n0: 638208 in 21 places, all below massif's threshold (1.00%)
+ n0: 1285080 in 404 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=15640675184
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=15845156679
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=16049630333
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=16220548507
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=16395834283
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=16610399362
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=16816133464
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=17020763695
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=17225255941
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=17429730940
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1712
+heap_tree=detailed
+n9: 95249808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 16777216 0x113CCC: main (fft_parallel.cpp:89)
+ n0: 16777216 0x113D0A: main (fft_parallel.cpp:94)
+ n0: 16777216 0x113D3D: main (fft_parallel.cpp:95)
+ n0: 16777216 0x113D70: main (fft_parallel.cpp:96)
+ n0: 8388608 0x113ECC: main (fft_parallel.cpp:115)
+ n0: 8388608 0x113EFC: main (fft_parallel.cpp:116)
+ n0: 8388608 0x113F2C: main (fft_parallel.cpp:117)
+ n2: 1690040 0x65366A9: opal_free_list_grow_st (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+  n1: 1051832 0x10FBEDC5: ???
+   n1: 1051832 0x6577D1B: mca_btl_base_select (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so.20.10.1)
+    n1: 1051832 0x1077A420: ???
+     n1: 1051832 0x50DAEA2: mca_bml_base_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+      n1: 1051832 0x50964C7: ompi_mpi_init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+       n1: 1051832 0x50B72A9: PMPI_Init (in /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so.20.10.1)
+        n0: 1051832 0x113A84: main (fft_parallel.cpp:46)
+  n0: 638208 in 21 places, all below massif's threshold (1.00%)
+ n0: 1285080 in 404 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=76
+#-----------
+time=17600649262
+mem_heap_B=95249808
+mem_heap_extra_B=189192
+mem_stacks_B=1688
+heap_tree=empty
