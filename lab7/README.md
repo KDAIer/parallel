@@ -150,9 +150,16 @@ done
 
 Massif 原始输出在 `results/massif_out/`，可读文本在 `results/massif_out_txt/`。
 
+可视化命令：
+
+```bash
+sudo apt install massif-visualizer
+massif-visualizer massif.out.xxx
+```
+
 ### 5.2 方法2
 
-直接运行 `analyze_peak.py`，改代码集成了 `massif_out`的生成
+直接运行 `analyze_peak.py`，该代码集成了 `massif_out`的生成
 
 ```bash
 cd src
