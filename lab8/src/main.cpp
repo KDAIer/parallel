@@ -66,7 +66,6 @@ Graph readGraph(const std::string &filename)
 
         edge_count += 1; // 无向图，记录一次即可
     }
-
     int V1 = vertices.size();
     int E1 = edge_count; // 每行一条边，实际边数量
     double D1 = 2.0 * E1 / V1;
