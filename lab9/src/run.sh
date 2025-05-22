@@ -11,7 +11,7 @@ echo "=== CUDA Hello World ===" > results.txt
 ./hello 10 2 4 >> results.txt
 
 echo -e "\n=== Matrix Transpose Benchmark ===" >> results.txt
-for N in 512 1024 2048; do
+for N in 512 1024 2048 8192 16384; do
   for B in 8 16 32; do
     echo "-- N=$N, BLOCK=${B}x${B} --" >> results.txt
     ./matrix_global $N $B >> results.txt

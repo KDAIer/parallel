@@ -118,3 +118,27 @@ Shared_opt transpose time: 0.046 ms
 Global transpose time: 0.165 ms
 Shared transpose time: 0.067 ms
 Shared_opt transpose time: 0.055 ms
+-- N=8192, BLOCK=8x8 --
+Global transpose time: 0.720 ms
+Shared transpose time: 0.771 ms
+Shared_opt transpose time: 0.728 ms
+-- N=8192, BLOCK=16x16 --
+Global transpose time: 0.975 ms
+Shared transpose time: 0.710 ms
+Shared_opt transpose time: 0.709 ms
+-- N=8192, BLOCK=32x32 --
+Global transpose time: 2.041 ms
+Shared transpose time: 0.877 ms
+Shared_opt transpose time: 0.791 ms
+-- N=16384, BLOCK=8x8 --
+Global transpose time: 2.746 ms
+Shared transpose time: 2.730 ms
+Shared_opt transpose time: 2.758 ms
+-- N=16384, BLOCK=16x16 --
+Global transpose time: 3.492 ms
+Shared transpose time: 2.732 ms
+Shared_opt transpose time: 2.713 ms
+-- N=16384, BLOCK=32x32 --
+Global transpose time: 7.510 ms
+Shared transpose time: 3.385 ms
+Shared_opt transpose time: 2.971 ms
