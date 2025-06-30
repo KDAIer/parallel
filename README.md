@@ -1,2 +1,2 @@
 # parallel
-Parallel Programming
+SYSU Parallel Programming
